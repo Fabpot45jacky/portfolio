@@ -1,3 +1,7 @@
+// document.addEventListener("contextmenu",(e)=>{
+//        e.preventDefault()
+// },false)
+
 (function () {
     [...document.querySelectorAll(".control")].forEach(button => {
         button.addEventListener("click", function() {
@@ -11,3 +15,6 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+document.addEventListener("contextmenu",(e)=>{
+       e.preventDefault()
+},false)
